@@ -1,0 +1,109 @@
+:root {
+  --color-principal: #E74C3C;      /* color para botones, enlaces, y ese tipo de mierdas */
+  --color-acento: #F0D802;         /* color para hovers, iconos, destacados y detallitos de mierda */
+  --color-secundario: #3B5249;     /* color para los fondos secundarios, barras laterales, cards */
+  --color-fondo: #0F0326;          /* color para el fondo principal de la web */
+  --color-texto-primario: #FFFFFF; /* texto principal, blanco */
+  --color-texto-secundario: #B3B3B3; /* color para textos secundarios y placeholders */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-primario);
+}
+
+
+header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    height: 75vh;
+    width: 100vw;
+    background-color: var(--color-fondo);
+    padding: 2em;
+    gap: 2em;
+}
+
+.logo {
+    height: 100%;    
+    width: 60px;          
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.moto {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+}
+
+.moto img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1;
+    color: var(--color-texto-primario);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .texto, .moto {
+        flex: unset;
+        width: 100%;
+    }
+
+    .moto img {
+        width: 100%;
+        height: auto;
+    }
+}
