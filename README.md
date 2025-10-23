@@ -16,5 +16,3 @@ https://srhelado.github.io/Blog-Serjan/
 - Leer posts (aun no)
 - Registrarse (aun no)
 - Contactar (aun no)
-- Cross platform (aun no)
-
