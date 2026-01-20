@@ -1,0 +1,214 @@
+:root {
+    --color-principal: #E74C3C;
+    /* color para botones, enlaces, y ese tipo de mierdas */
+    --color-acento: #F0D802;
+    /* color para hovers, iconos, destacados y detallitos de mierda */
+    --color-secundario: #3B5249;
+    /* color para los fondos secundarios, barras laterales, cards */
+    --color-fondo: #0F0326;
+    /* color para el fondo principal de la web */
+    --color-texto-primario: #FFFFFF;
+    /* texto principal, blanco */
+    --color-texto-secundario: #B3B3B3;
+    /* color para textos secundarios y placeholders */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-primario);
+}
+
+
+header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: 8vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    width: 100%;
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.moto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+}
+
+.moto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto {
+    width: 100%;
+    color: var(--color-texto-primario);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.logo {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1em;
+}
+
+.links a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.25rem 0;
+    transition: all 0.3s ease;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-principal);
+    transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+    width: 100%
+}
+
+.links a:hover {
+    color: var(--color-principal);
+    transform: translateY(-2px);
+}
+
+.sidebar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    main {
+        padding: 2rem;
+    }
+
+    .texto {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .moto,
+    .texto {
+        flex: 1;
+    }
+
+    nav {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenido-principal {
+        flex: 3;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+}
+
+
+#imagenConstruccion {
+    background-image: url("../img/flatten.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#imagenConstruccion h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transform: translateY(-250px);
+}
