@@ -1,30 +1,41 @@
 # BLOG JAN SERGI ADRI
 
-El mejor blog que hay sobre cosas, una obra maestra de internet y un hito de la programación.
+El mejor blog que hay sobre cosas, una obra maestra del internet y un hito de la programacion
 
-Un blog desarrollado utilizando la última tecnología en el entorno web, utilizando una variedad de técnicas avanzadas de la programación moderna para brindar una experiencia sensorial de vanguardia que lleva al espectador a los límites de la psique humana y permite al usuario compartir sus conocimientos en una variedad de temas del mundo del motor, tales como motocicletas, ciclomotores, scooters y vehículos similares.
-
+Un blog desenvolupat utilitzant l'ultima tecnologia en el entorn web, utilitzant una varietat de tecniques avançades de la programació moderna per tal de brindar una experiencia sensorial de vanguardia que porta al espectador als limits de la psique humana i permet al usuari compartir els seus coneixements en una varietat de temas del mon del motor, tal com motocicletes, ciclomotors, scooters i vehicles similars.
 ## Demo
 https://srhelado.github.io/Blog-Serjan/
 
+
 ## Features
 
-- Ver y crear posts  
-- Agregar amigos y chatear con ellos  
-- Guardar posts para consultar después  
-- Debatir con usuarios con opiniones diferentes  
-
+- Veure i crear posts
+- Agregar amics i xatejar amb ells
+- Guardar posts per consultar despres
+- Debatir amb usuaris amb opinions diferents
 ## Roadmap
 
-- Minador de criptomonedas  
-- Suscripción premium ultra plus  
-- Backend completo y funcional  
+- Minador de criptomonedes
+
+- Suscripció premium ultra plus 
+
+- Backend complet i funciona
+
 
 ## Tech Stack
 
-**Client:** HTML, CSS, JavaScript  
-**Server:** N/A  
+**Client:** HTML, CSS, Javascript
+
+**Server:** N/A
+
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- [@SrHelado](https://www.github.com/srhelado)
+- [@adriasancheza](https://github.com/adriasancheza)
+- [@sergifernandezmEducem](https://github.com/sergifernandezmEducem)
