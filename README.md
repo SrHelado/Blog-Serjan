@@ -1,4 +1,4 @@
-# BLOG JAN SERGI ADRI
+# BLOG JAN SERGI ADRIA
 
 El mejor blog que hay sobre cosas, una obra maestra del internet y un hito de la programacion
 
